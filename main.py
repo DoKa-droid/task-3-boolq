@@ -75,8 +75,6 @@ def get_answer():
         answer = "No" if y_pred == 0 else "Yes"
 
     return render_template('index.html', text_input=passage, question_input=question, answer_input=answer)
-    # question = "is there a sequel to the movie the golden compass"
-    # passage = "The Golden Compass (film) -- In 2011, Philip Pullman remarked at the British Humanist Association annual conference that due to the first film's disappointing sales in the United States, there would not be any sequels made."
 
 
 if __name__ == '__main__':
