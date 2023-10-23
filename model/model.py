@@ -4,7 +4,6 @@ import torch
 import torch.nn.functional as F
 from transformers import BertTokenizer, BertForSequenceClassification
 
-
 def preprocessing_for_bert(data):
     # Создаем списки для хранения результатов
     input_ids = []
