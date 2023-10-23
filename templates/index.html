@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Итоговая аттестация</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+<table class="table table-success table-striped" align="middle" style="height:100%">
+    <tbody class="table-group-divider">
+    <form method="POST">
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">Enter text</th>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <textarea name="text"  placeholder="Enter text" cols="50" rows="5">{{ text_input }}</textarea>
+            </td>
+        </tr>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">Enter question</th>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <textarea name="question" cols="40" placeholder="Enter question" rows="2">{{ question_input }}</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <button type="submit" name="button">Get answer</button>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; vertical-align: middle;">
+                <textarea type="text" style="resize: none;" name="answer" cols="25" rows="2">{{ answer_input }}</textarea>
+            </td>
+        </tr>
+    </form>
+    </tbody>
+</table>
+
+</body>
+
+</html>
